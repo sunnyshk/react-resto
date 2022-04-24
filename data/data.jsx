@@ -1,0 +1,242 @@
+const resData = [
+  {
+    id:1,
+    url:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+    name: "Oh! Bambai",
+    votes: 525,
+    reviews: 134,
+    costOne: 160,
+    rating:4.1,
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:2,
+    url:"https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+
+    name: "Desilicious",
+    votes: 710,
+    reviews: 334,
+    costOne: 260,
+    rating:3.4,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:3,
+    url:"https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Cardamom",
+    votes: 335,
+    reviews: 214,
+    costOne: 230,
+    rating:4.4,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:4,
+    url:"https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Spice Factory",
+    votes: 241,
+    reviews: 125,
+    costOne: 300,
+    rating:2.5,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:5,
+    url:"https://images.unsplash.com/photo-1543826173-70651703c5a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60",
+
+    name: "The Imperial Spice",
+    votes: 682,
+    reviews: 578,
+    costOne: 220,
+    rating:4.8,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:6,
+    url:"https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60",
+
+    name: "King of Spices",
+    votes: 125,
+    reviews: 395,
+    costOne: 240,
+    rating:2.7,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:7,
+    url:"https://images.unsplash.com/photo-1484980859177-5ac1249fda6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Allahabadi’s",
+    votes: 503,
+    reviews: 285,
+    costOne: 223,
+    rating:3.8,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:8,
+    url:"https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Naan House",
+    votes: 782,
+    reviews: 347,
+    costOne: 310,
+    rating:2.3,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:9,
+    url:"https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Indian Grill",
+    votes: 288,
+    reviews: 472,
+    costOne: 275,
+    rating:4.4,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:10,
+    url:"https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Khana Khazana",
+    votes: 294,
+    reviews: 208,
+    costOne: 300,
+    rating:3.3,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:11,
+    url:"https://images.unsplash.com/photo-1515573866280-06bda6d4e16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Tandoori Palace",
+    votes: 395,
+    reviews: 285,
+    costOne: 523,
+    rating:4.5,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:12,
+    url:"https://images.unsplash.com/photo-1499969942143-ad2a66bc72dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Dilli ki Rasoi",
+    votes: 1000,
+    reviews: 640,
+    costOne: 430,
+    rating:3.6,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:13,
+    url:"https://images.unsplash.com/photo-1561043433-9265f73e685f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Masala Chowk",
+    votes: 1102,
+    reviews: 848,
+    costOne: 340,
+    rating:4.9,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:14,
+    url:"https://images.unsplash.com/photo-1525151498231-bc059cfafa2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Maharaja Club",
+    votes: 235,
+    reviews: 121,
+    costOne: 120,
+    rating:2.2,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:15,
+    url:"https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Taste of Hyderabad",
+    votes: 658,
+    reviews: 384,
+    costOne: 254,
+    rating:4.2,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:16,
+    url:"https://images.unsplash.com/photo-1509482560494-4126f8225994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Gol Roti",
+    votes: 534,
+    reviews: 237,
+    costOne: 249,
+    rating:3.2,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:17,
+    url:"https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Indian Masala House",
+    votes: 128,
+    reviews: 47,
+    costOne: 120,
+    rating:1.8,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:18,
+    url:"https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "The Great Indian Kitchen",
+    votes: 2423,
+    reviews: 1942,
+    costOne: 405,
+    rating:3.6,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:19,
+    url:"https://images.unsplash.com/photo-1606850246029-dd00bd5eff97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "Shahi Darbar",
+    votes: 1248,
+    reviews: 503,
+    costOne: 257,
+    rating:4.3,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+  {
+    id:20,
+    url:"https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+
+    name: "URU Brewpark",
+    votes: 373,
+    reviews: 172,
+    costOne: 302,
+    rating:2.8,
+
+    categories: "Asian, Fast Food, Casual Dining",
+  },
+];
+
+export default resData;
